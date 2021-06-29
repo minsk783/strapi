@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manual_and_documents",
+  "info": {
+    "name": "Manual and Documents",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "item": {
+      "model": "item",
+      "via": "manual_and_documents"
+    }
+  }
+}

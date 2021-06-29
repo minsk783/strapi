@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "model": "category",
+      "via": "items"
+    },
+    "manual_and_documents": {
+      "via": "item",
+      "collection": "manual-and-documents"
+    }
+  }
+}

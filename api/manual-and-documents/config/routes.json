@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/manual-and-documents",
+      "handler": "manual-and-documents.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/manual-and-documents/count",
+      "handler": "manual-and-documents.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/manual-and-documents/:id",
+      "handler": "manual-and-documents.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/manual-and-documents",
+      "handler": "manual-and-documents.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/manual-and-documents/:id",
+      "handler": "manual-and-documents.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/manual-and-documents/:id",
+      "handler": "manual-and-documents.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
